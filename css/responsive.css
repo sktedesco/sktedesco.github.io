@@ -760,7 +760,9 @@
 	/* Portfolio - Items
 	-----------------------------------------------------------------*/
 
-	.portfolio .portfolio-item { width: 33.33333333%; }
+	.portfolio .portfolio-item { 
+        width: 33.33333333%;
+        margin-bottom: 10px !important;}
 
 	/* Portfolio - Items - 2 Columns - No Margin
 	-----------------------------------------------------------------*/
