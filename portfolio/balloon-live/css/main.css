@@ -1,0 +1,529 @@
+/* color palette */
+.dblue {
+    background-color: #2a2938;}
+
+.lblue {
+    background-color: #8ba394;}
+
+.red {
+    background-color: #9d3e27;}
+
+.orange {
+    background-color: #c7893e;}
+
+.yellow {
+    background-color: #fcf8d8;}
+.grey {
+    background-color: #d6d7d6;}
+
+
+/* load fonts */
+@font-face {
+font-family: 'Antonio Light';
+font-style: normal;
+font-weight: normal;
+src: local('Antonio Light'), url('Antonio-Light.woff') format('woff');}
+
+@font-face {
+font-family: 'Antonio Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Antonio Regular'), url('Antonio-Regular.woff') format('woff');}
+
+@font-face {
+font-family: 'Antonio Bold';
+font-style: normal;
+font-weight: normal;
+src: local('Antonio Bold'), url('Antonio-Bold.woff') format('woff');}
+
+
+/* set up css */
+nav, header, footer, section, article, video {
+	display: block;}
+
+body {
+	font-size: 16px;}
+
+* {
+	box-sizing: border-box;}
+
+
+/* no image style because it wrecks image slideshow */
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	content: "";
+	clear: both;
+	height: 0;}
+
+
+/* overlay */
+.overlay {
+	background-image: url(../images/bg_pattern.png);
+	background-repeat: repeat-x repeat-y;
+    z-index: -1;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+	height: 100%;
+	opacity: 1;}
+
+
+/* layout */
+section {
+    background-image: url(images/bg_pattern.svg); 
+    repeat:repeat;}
+
+#bg_pattern { 
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: url(images/bg_pattern.png);
+    height: 100% !important;
+	overflow: auto;}
+
+nav {
+    height: 60px;
+    width: 100%;
+	-moz-box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+	-webkit-box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+	box-shadow: 3px 3px 3px rgba(0,0,0,0.3);}
+@media screen and (max-width: 768px) {
+	nav {
+		display: none;}}
+
+.fixed {
+	position: fixed; 
+	top: 0; 
+	height: 60px; 
+	z-index: 1;}
+
+.container {
+    width: 960px;
+    margin: auto;
+	padding-top: 95px;
+	padding-bottom: 115px;}
+@media screen and (max-width: 768px) {
+	.container {		
+		width: 100%;
+		padding-top: 55px;
+		padding-bottom: 55px;
+    	margin: auto;}}
+
+.vhcontainer {
+    width: 960px;
+	height:100vh;
+	min-height: 800px;
+    margin: 0 auto;}
+@media screen and (max-width: 768px) {
+	.vhcontainer {
+   		width: 100%;
+		height: 800px;
+		min-height: 800px;
+    	margin: 0 auto;}}
+@media screen and (max-width: 480px) {
+	.vhcontainer {
+		height: 600px;
+		min-height: 600px;}}
+
+.line {
+	width: 100%;
+	height: 4px;}
+
+.smline {
+	width: 120px;
+	margin: 0 auto;
+	height: 4px;
+	margin-bottom: 20px;}
+
+section, footer {
+    width: 100%;}
+
+.logo {
+	width: 400px;
+	margin: 0 auto;
+	padding-top: 50px;}
+@media screen and (max-width: 768px) {
+	.logo {
+		width: 60%;
+		padding-top: 25px;}}		
+
+.arrow {
+	width: 70px;
+	margin: 0 auto;
+	padding-top: 35px;}
+
+.button {
+    height: 60px;
+    width: 210px;
+	margin-left: 90px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-top: 12px;
+	float: left;
+    text-align: center;}
+@media screen and (max-width: 768px) {
+    .button {
+    	height: 60px;
+   		width: 210px;
+		text-align: center;}}
+@media screen and (max-width: 480px) {
+	.button {
+		margin-left: auto;
+		margin-right: auto;
+		float: none;}}
+
+.button.social {
+	height: 60px;
+	width: 60px;
+	margin-left: 20px;
+	margin-right: 20px;}
+@media screen and (max-width: 480px) {
+	.button.social {
+		float: left;}}
+
+.button.logo {
+	height: 60px;
+	width: 60px;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 0;
+	padding-top: 0;}
+
+.buttoncontainer {
+	width: 690px;
+	padding-top: 50px;
+	padding-bottom: 95px;
+	margin: 0 auto;}
+@media screen and (max-width: 768px) {
+    .buttoncontainer {
+		padding-top: 35px;
+    	padding-bottom: 35px;}}
+@media screen and (max-width: 480px) {
+	.buttoncontainer {
+		width: 450px;
+		margin: 0 auto;
+		padding-bottom: 25px;}}
+
+.buttoncontainer.social {
+	width: 400px;}
+@media screen and (max-width: 768px) {
+	.buttoncontainer.social {
+	width: 400px;
+	padding-top: 50px;
+	padding-bottom: 95px;
+	margin: 0 auto;}}
+@media screen and (max-width: 480px) {
+	.buttoncontainer.social {
+		width: 400px;}}
+
+.textblock {
+	width: 660px;
+    margin: 0 auto;}
+@media screen and (max-width: 768px) {
+    .textblock {
+    	width: 80%;
+    	margin: 0 auto;
+    	padding-top: 0;
+   		padding-bottom: 0;}}
+
+nav .textblock {
+	width: 960px;
+    margin: 0 auto;}
+
+.formblock {
+	width: 500px;
+	height: 40px;
+    margin: 0 auto;
+	border: 1px solid #fcf8d8;
+	margin-top: 35px;
+	text-align: left;
+	padding-left: 10px;}
+@media screen and (max-width: 480px) {
+	.formblock {
+		width: 400px;}}
+
+.formblock.message {
+	height: 150px;}
+@media screen and (max-width: 480px) {
+	.formblock.message {
+		width: 400px;}}
+
+#map-canvas {
+	width: 400px;
+	height: 500px;}
+
+.textleft {
+	width: 420px;
+	margin-left:20px;
+	margin-right: 20px;
+	float: left;}
+@media screen and (max-width: 768px) {
+	.textleft {
+		width: 340px;}}
+@media screen and (max-width: 480px) {
+	.textleft {
+		width: 400px;
+		margin: 0 auto;
+		float: none;}}
+
+.textcontainer {
+	width: 920px;
+	margin: 0 auto;
+    padding-bottom: 115px;}
+@media screen and (max-width: 768px) {
+	.textcontainer {
+		width: 760px;
+		padding-bottom: 35px;}}
+@media screen and (max-width: 480px) {
+	.textcontainer {
+		width: 450px;
+		padding-bottom: 0;}}
+
+.blockcenter {
+    width: 100%;
+    margin: 0 auto;
+	text-align: center;}
+@media screen and (max-width: 768px) {
+   .blockcenter {
+    	width: 100%;}}
+
+table {
+    width: 420px;
+    text-align: left;
+    margin-top: 15px;
+	margin-bottom: 45px;
+    border: 1px solid #d6d7d6;}
+@media screen and (max-width: 768px) {
+	table {
+		width: 340px;}}
+@media screen and (max-width: 480px) {
+	table {
+		width: 400px;}}
+
+td.left {
+    width: 115px;}
+
+.spacer {
+	width: 500px;
+	height: 35px;}
+@media screen and (max-width: 768px) {
+	.spacer {
+		width: 500px;
+		height: 115px;}}
+@media screen and (max-width: 480px) {
+	.spacer {
+		display: none}}
+
+.spacer.sm {
+	width: 500px;
+	height: 115px;}
+@media screen and (max-width: 480px) {
+	.spacer.sm {
+		display: none}}
+
+
+/* typography */
+h1 { 
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: 1.1em;
+	letter-spacing: 3px;}
+@media screen and (max-width: 768px) {
+    h1 { 
+    	font-family: 'Source Sans Pro', sans-serif;
+    	font-weight: 700;
+    	font-size: 2.4vw;}}
+@media screen and (max-width: 480px) {
+	h1 {
+		font-family: 'Source Sans Pro', sans-serif;
+    	font-weight: 700;
+    	font-size: 3.7vw;}}
+
+td h1 { 
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: 1.3em;
+	letter-spacing: 3px;
+    line-height: normal;
+    padding-left: 5px;
+    color: #d6d7d6;}
+
+h1.sub { 
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: 1.3em;
+	letter-spacing: 3px;
+	line-height: 2em;}
+
+h1.h1yellow {
+    color: #fcf8d8;}
+
+h1.h1lblue {
+    color: #8ba394;}
+
+h1.h1dblue {
+    color: #2a2938;}
+
+h1.h1red {
+    color: #9d3e27;}
+
+h2 { 
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: 1.7em;
+	margin-bottom: 25px;
+	letter-spacing: 3px;
+	text-align: center;}
+@media screen and (max-width: 768px) {
+    h2 { 
+    	font-family: 'Source Sans Pro', sans-serif;
+    	font-weight: 700;
+    	font-size: 4vw;}}
+@media screen and (max-width: 480px) {
+	h2 {
+		font-family: 'Source Sans Pro', sans-serif;
+    	font-weight: 700;
+    	font-size: 5vw;}}
+
+h2.h2yellow {
+    color: #fcf8d8;}
+
+h2.h2dblue {
+    color: #2a2938;}
+
+h2.h2lblue {
+    color: #8ba394;}
+
+h2.h2grey {
+    color: #d6d7d6;}
+
+h3 { 
+    font-family: 'Antonio Bold', sans-serif; 
+    font-weight: 400;
+    font-size: 9em;
+    color: #fcf8d8;}
+@media screen and (max-width: 768px) {
+    h3 { 
+    	font-family: 'Antonio Bold', sans-serif; 
+    	font-weight: 400;
+    	font-size: 12vw;
+		letter-spacing: 6px;}}
+
+h4 { 
+    font-family: 'Antonio Bold', sans-serif; 
+    font-weight: 400;
+    font-size: 2.5em;
+	letter-spacing: 14px;
+    color: #fcf8d8;}
+@media screen and (max-width: 768px) {
+    h4 { 
+    	font-family: 'Antonio Bold', sans-serif; 
+    	font-weight: 400;
+    	font-size: 7vw;
+		letter-spacing: 2px;}}
+
+body { 
+    font-family: 'Source Sans Pro', sans-serif; 
+    font-weight: 400;
+    font-size: 1em;}
+	
+p { 
+    font-family: 'Source Sans Pro', sans-serif; 
+    font-weight: 400;
+    font-size: 1.2em;
+	line-height: 2em;}
+
+td p {
+    font-family: 'Source Sans Pro', sans-serif; 
+    font-weight: 400;
+    font-size: 1.2em;
+    color: #d6d7d6;
+    padding-right: 20px;
+    padding-left: 20px;
+    line-height: 1.7em;}
+
+nav p {
+	line-height: 60px;
+	word-spacing: 30px;
+	letter-spacing: 2px;
+	text-align: right;}
+
+p.small {
+    font-family: 'Source Sans Pro', sans-serif; 
+    font-weight: 400;
+    font-size: .8em;
+    color: #d6d7d6;
+    text-align: right;
+    line-height: 1.7em;
+    padding-right: 30px;}
+
+p.pcenter {
+	text-align: center;}
+
+p.pbold {
+	font-weight: 700;}
+
+p.pyellow {
+    color: #fcf8d8;}
+
+p.pdblue {
+    color: #2a2938;}
+
+p.pgrey {
+    color: #d6d7d6;}
+	
+
+/* link styling */
+a.anav:link {
+	line-height: 60px;
+	font-weight: 700;
+	word-spacing: 30px;
+	letter-spacing: 2px;
+	text-align: right;
+	text-decoration: none;
+	color: #fcf8d8;}
+
+a.anav:hover {
+	text-decoration: underline;
+	color: #fcf8d8;}
+
+a.anav:visited {
+	text-decoration: none;
+	color: #fcf8d8;}
+	
+a.abutton:link {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: 1.1em;
+	letter-spacing: 3px;
+	text-decoration: none;}
+@media screen and (max-width: 768px) {
+    a.abutton:link { 
+    	font-family: 'Source Sans Pro', sans-serif;
+    	font-weight: 700;
+    	font-size: 2.4vw;}}
+@media screen and (max-width: 480px) {
+	a.abutton:link {
+		font-family: 'Source Sans Pro', sans-serif;
+    	font-weight: 700;
+    	font-size: 3.7vw;}}
+		
+a.abutton:hover {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    font-size: 1.1em;
+	letter-spacing: 3px;
+	text-decoration: underline;}
+@media screen and (max-width: 768px) {
+    a.abutton:hover { 
+    	font-family: 'Source Sans Pro', sans-serif;
+    	font-weight: 700;
+    	font-size: 2.4vw;}}
+@media screen and (max-width: 480px) {
+	a.abutton:hover {
+		font-family: 'Source Sans Pro', sans-serif;
+    	font-weight: 700;
+    	font-size: 3.7vw;}}

@@ -1,0 +1,404 @@
+/* Main Body CSS 
+============================================= */
+body {
+    background-color: #f3f7fa;
+    background-image: url("../img/section-bg.png");
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: -15px;
+}
+
+p {
+    line-height: 1.75;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p.text-muted {
+    margin-bottom: 0;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-family: 'Raleway', sans-serif;
+}
+
+p.text-bold {
+    font-weight: 700;
+    color: #093756;
+}
+
+a {
+    color: #bfdbf7;
+}
+
+a:hover {
+    color: #bfdbf7;
+    text-decoration: underline;
+}
+
+.text-primary {
+    color: #bfdbf7 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    color: #093756;
+    font-family: 'Raleway', sans-serif;
+}
+
+hr.style1 {
+    border: 0; 
+    height: 1px; 
+    background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
+    margin-bottom: 25px;
+}
+
+section {
+    background-color: #f3f7fa;   
+    padding: 50px 0;
+}
+
+section h2.section-heading {
+    margin-top: 15px;
+    margin-bottom: 45px;
+}
+
+section h3.section-subheading {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 75px;
+    text-transform: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/* Jumbotron CSS 
+============================================= */
+
+.jumbotron {
+    min-height: 400px;
+    text-align: center;
+    background-image: url("../img/header-bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 0;
+}
+
+.jumbotron img {
+    margin-top: 110px;
+    margin-bottom: 40px;
+    max-height: 200px;
+}
+
+.jumbotron#mesmer {
+    background-image: url("../img/portfolio/mesmer-02.png");
+}
+
+.jumbotron#balloon-fiesta {
+    background-image: url("../img/portfolio/balloon-01.jpg");
+}
+
+.jumbotron#mesmer {
+    background-image: url("../img/portfolio/mesmer-02.png");
+}
+
+.jumbotron#film-night {
+    background-image: url("../img/portfolio/film-night-header.jpg");
+}
+
+.jumbotron#mesmer {
+    background-image: url("../img/portfolio/mesmer-02.png");
+}
+
+.jumbotron#mesmer {
+    background-image: url("../img/portfolio/mesmer-02.png");
+}
+
+
+/* Mouse Selection CSS 
+============================================= */
+::selection {
+    background: #bfdbf7;
+    text-shadow: none;
+}
+
+img::selection {
+    background: transparent;
+}
+
+img::-moz-selection {
+    background: transparent;
+}
+
+
+/* Navigation CSS 
+============================================= */
+#mainNav .navbar-toggler {
+    font-size: 12px;
+    right: 0;
+    padding: 13px;
+    font-weight: 400;
+    color: white;
+    border: 0;
+    letter-spacing: 2px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#mainNav .navbar-brand {
+    margin-left: 25px;
+    color: #f4f4f4;
+}
+
+#mainNav .navbar-nav {
+    margin-right: 25px;
+}
+
+#mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+    color: #bfdbf7;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link {
+    font-size: 90%;
+    font-weight: 400;
+    padding: 0.75em 0;
+    letter-spacing: 2px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+    color: #bfdbf7;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link {
+    padding: 1.1em 1em !important;
+}
+
+
+/* Header and Nav Responsive CSS 
+============================================= */
+@media (min-width: 992px) {
+    #mainNav {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+        transition: padding-top 0.3s, padding-bottom 0.3s;
+        border: none;
+        background-color: transparent;
+    }
+    #mainNav .navbar-brand {
+        font-size: 1.75em;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+    #mainNav.navbar-shrink {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    #mainNav.navbar-shrink .navbar-brand {
+        font-size: 1.25em;
+        padding: 12px 0;
+    }
+}
+
+@media (max-width: 992px) {
+    .jumbotron img {
+        max-height: 200px;
+    }
+}
+
+
+/* Portfolio CSS 
+============================================= */
+section#portfolio {
+    background-color: #f3f7fa;
+    background-image: url("../img/section-bg.png");
+    margin-top: 65px;
+}
+
+#portfolio .portfolio-item {
+    right: 0;
+    margin: 0 0 35px;
+}
+
+#portfolio .portfolio-item .portfolio-link {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+    opacity: 0;
+    background: rgba(9, 55, 86, 0.7);
+    cursor: pointer;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+    opacity: 1;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+    position: relative;
+    top: 45%;
+    width: 100%;
+    margin-top: -10px;
+    text-align: center;
+    color: white;
+    padding: 5px;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+    margin: 0;
+    color: white;
+}
+
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content p {
+    margin: 0;
+    color: white;
+}
+
+#portfolio * {
+    z-index: 2;
+}
+
+
+/* About Me CSS 
+============================================= */
+section#about {
+    background-color: #093756;
+    padding-bottom: 35px;
+}
+
+section#about p {
+    color: #ffffff;
+    line-height: 1.75;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+}
+
+section#about img {
+    text-align: center;
+    width: 125px;
+    border: 3px solid #f4f4f4;
+    margin-bottom: 25px;
+}
+
+
+/* Project CSS 
+============================================= */
+section#project {
+    background-color: #f3f7fa;
+    background-image: url("../img/section-bg.png");
+    padding-top: 95px;
+    padding-bottom: 65px;
+}
+
+section#project a:hover {
+    color: #093756;
+    text-decoration: underline;
+}
+
+#project-text {
+    padding: 0 40px 0 40px;
+}
+
+#project img {
+    padding-bottom: 25px;
+}
+
+@media (max-width: 765px) {
+    #project #project-text {
+        margin-bottom: 50px;
+    }
+}
+
+
+/* Slick CSS
+============================================= */
+.slider {
+    width: 50%;
+    margin: 10px auto;
+    background-color: transparent;
+    margin-top: -35px;
+}
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    min-height: 100px;
+    min-width: 100px;
+    width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+
+
+.slick-slide {
+    transition: all ease-in-out .3s;
+}
+
+/* Footer CSS 
+============================================= */
+footer {
+    padding: 25px 0;
+    text-align: center;
+}
+
+footer span.copyright {
+    font-size: 90%;
+    text-transform: none;
+    color: #f4f4f4;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer ul.quicklinks {
+    font-size: 90%;
+    line-height: 50px;
+    margin-bottom: 0;
+    text-transform: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul.social-buttons {
+    margin-bottom: 0;
+}
+
+ul.social-buttons li a {
+    font-size: 20px;
+    line-height: 50px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    color: white;
+    border-radius: 100%;
+    outline: none;
+    background-color: #f4f4f4;
+}
+
+ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
+    background-color: #bfdbf7;
+}

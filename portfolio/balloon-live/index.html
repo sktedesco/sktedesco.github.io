@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+		<!--make new tags for IE -->
+		<!--[if lt IE 9]>
+		<script type="text/javascript">
+			document.createElement("nav");
+			document.createElement("header");
+			document.createElement("footer");
+			document.createElement("section");
+			document.createElement("article");
+			document.createElement("video");
+		</script>
+		<![endif]-->
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title2015 International Balloon Fiesta</title>
+    
+    <meta name="description" content="Interactive II">
+    <meta name="keywords"  content="Project 2: Festival">        
+    <meta name="author"   content="Sarah Tedesco">
+    
+    <!-- link to css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    
+    <link rel="icon" type="image/png" href="images/favicon.png">
+        
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- image slider -->
+		<link rel="stylesheet" href="css/supersized.css" type="text/css" media="screen" />
+		
+        <!-- query link -->
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+		
+        <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+		
+		<script type="text/javascript" src="js/supersized.3.2.7.min.js"></script>
+		
+		<script type="text/javascript">
+			
+			jQuery(function($){
+				
+				$.supersized({
+				
+					// Functionality
+					slideshow               :   1,			// Slideshow on/off
+					autoplay				:	1,			// Slideshow starts playing automatically
+					start_slide             :   1,			// Start slide (0 is random)
+					stop_loop				:	0,			// Pauses slideshow on last slide
+					random					: 	0,			// Randomize slide order (Ignores start slide)
+					slide_interval          :   3000,		// Length between transitions
+					transition              :   1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+					transition_speed		:	3000,		// Speed of transition
+					new_window				:	1,			// Image links open in new window/tab
+					pause_hover             :   0,			// Pause slideshow on hover
+					keyboard_nav            :   1,			// Keyboard navigation on/off
+					performance				:	1,			// 0-Normal, 1-Hybrid speed/quality, 2-Optimizes image quality, 3-Optimizes transition speed // (Only works for Firefox/IE, not Webkit)
+					image_protect			:	1,			// Disables image dragging and right click with Javascript
+															   
+					// Size & Position						   
+					min_width		        :   0,			// Min width allowed (in pixels)
+					min_height		        :   0,			// Min height allowed (in pixels)
+					vertical_center         :   1,			// Vertically center background
+					horizontal_center       :   1,			// Horizontally center background
+					fit_always				:	0,			// Image will never exceed browser width or height (Ignores min. dimensions)
+					fit_portrait         	:   1,			// Portrait images will not exceed browser height
+					fit_landscape			:   0,			// Landscape images will not exceed browser width
+															   
+															   
+					// Components							
+					slide_links				:	'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
+					thumb_links				:	1,			// Individual thumb links for each slide
+					thumbnail_navigation    :   0,			// Thumbnail navigation
+					slides 					:  	[			// Slideshow Images
+														{image : 'images/image1.jpg', title : 'image1'},
+														{image : 'images/image2.jpg', title : 'image2'},
+														{image : 'images/image3.jpg', title : 'image3'},
+														{image : 'images/image4.jpg', title : 'image4'},							
+												],
+												
+					// Theme Options			   
+					progress_bar			:	1,			// Timer for each slide							
+					mouse_scrub				:	0
+					
+				});
+		    });
+		    
+	</script>
+    
+    <script>
+   $(document).ready(function(){
+	   $(window).bind('scroll', function() {
+	   var navHeight = $( window ).height() - 60;
+			 if ($(window).scrollTop() > navHeight) {
+				 $('nav').addClass('fixed');
+			 }
+			 else {
+				 $('nav').removeClass('fixed');
+			 }
+		});
+	});
+	</script>
+    
+    <!-- javascript for smooth scrolling -->
+ 	<script>
+	$(function() {
+	  $('a[href*=#]:not([href=#])').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+	      var target = $(this.hash);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	      if (target.length) {
+	        $('html,p').animate({
+	          scrollTop: target.offset().top
+	        }, 900);
+	        return false;
+	      }
+	    }
+	  });
+	});
+	</script>
+
+</head>
+
+<body>
+        <a name="home"></a>
+        <section class="clearfix overlay"> 
+                <div class="vhcontainer">
+                	<div class="blockcenter">
+                    	<a href="#about"><div class="logo"><img src="images/logo.svg"></div></a>
+                    	<h3>OCTOBER 3-11</h3>
+                    	<h4>BALLOON FIESTA PARK, NE</h4>
+					</div>
+                    <div class="arrow"><a href="#about"><img src="images/arrow.svg"></a></div>
+                </div>
+        </section>
+
+        <div class="line yellow"></div>
+        <a name="about"></a>
+        <nav class="red">
+        	<div class="textblock">
+            	<a href="#home"><div class="button logo"><img src="images/logo.svg"></div></a>
+        		<p class="pyellow">
+                	<a class="anav" href="#tickets">TICKETS</a> 
+                    <a class="anav" href="#history">HISTORY</a>
+                    <a class="anav" href="#connect">CONNECT</a>
+                    <a class="anav" href="#events">EVENTS</a>
+                    <a class="anav" href="#plan">PLAN</a>
+                    <a class="anav" href="#contact">CONTACT</a></p>
+            </div>
+        </nav>
+        
+        
+        <section class="clearfix red">
+            <div class="container">
+                <div class="textblock">
+                    <h2 class="h2yellow">THE 2015 INTERNATIONAL BALLOON FIESTA</h2>
+                    <div class="smline yellow"></div>
+                    <p class="pyellow">For the past 42 years, for nine days in October, the crisp, clear desert skies are have been painted with a kaleidoscope of color as hundreds of balloons list off from Albuquerque’s Balloon Fiesta Park. Nothing rivals the power of Mass ascension on crisp early mornings as these graceful giants leave the ground to take their place in the cerulean desert sky. There’s something for everyone to enjoy: whimsical special shapes filled with equal parts of hot air and wonder, and Balloon Flows that create a magical night landscape for guests to wander.
+                    </p>
+                </div>
+            </div>        
+        </section>
+
+        
+        <a name="tickets"></a>
+        <section class="clearfix overlay">
+            <div class="container">
+                <div class="blockcenter">
+                    <h3>JOIN THE FUN</h3>
+                    <h4>GREAT EVENTS FOR ALL AGES</h4>
+                    <div class="buttoncontainer">
+                        <a class="abutton" href="#"><div class="button yellow"><h1 class="h1dblue">GENERAL ADMISSION</h1></div></a>
+                        <a class="abutton" href="#"><div class="button yellow"><h1 class="h1dblue">HOT AIR PILOT APPLICATION</h1></div></a>
+                        <a class="abutton" href="#"><div class="button yellow"><h1 class="h1dblue">CREW REGISTRATION</h1></div></a>
+                        <a class="abutton" href="#"><div class="button yellow"><h1 class="h1dblue">GAS PILOT APPLICATION</h1></div></a>
+                    <div class="spacer"></div>
+                    </div>
+               </div>
+            </div>
+        </section>
+        
+        <a name="history"></a>
+        <div class="line dblue"></div>
+        <section class="clearfix lblue">
+            <div class="container">
+                <div class="textblock">
+                    <h2 class="h2dblue">OUR HISTORY</h2>
+                    <div class="smline dblue"></div>
+                    <p class="pdblue">Beginning in 1972 as the highlight of a 50th birthday celebration for 770 KOB Radio with the gathering of thirteen balloons from seven states, it was held in the parking lot of the local shopping mall with 20,000 spectators. The following year Albuquerque hosted the first World Hot-Air Balloon Championships, and the fiesta became an international event.</p><br>
+                    <p class="pdblue">The International Balloon Fiesta has grown each year for decades, and today is the largest balloon festival in the world. On any given day during the festival, up to 100,000 spectators may be on the launch field where they are provided the rare opportunity to observe inflation and take off procedures. Countless more people gather at landing sites all over the city to watch incoming balloons.</p>
+                </div>
+            </div>
+        </section>
+
+        <a name="connect"></a>
+        <section class="clearfix overlay">
+            <div class="container">
+                <div class="blockcenter">
+                    <h3>CONNECT</h3>
+                    <h4>WITH THE COMMUNITY</h4>
+                    <div class="buttoncontainer social">
+                        <a class="abutton" href="#"><div class="button social"><img src="images/twitter-social.svg"></div></a>
+                        <a class="abutton" href="#"><div class="button social"><img src="images/tumblr-social.svg"></div></a>
+                        <a class="abutton" href="#"><div class="button social"><img src="images/facebook-social.svg"></div></a>
+                        <a class="abutton" href="#"><div class="button social"><img src="images/instagram-social.svg"></div></a>
+                    </div>
+               </div>
+            </div>
+        </section>
+      
+        <a name="events"></a>
+        <div class="line grey"></div>
+        <section class="clearfix dblue">
+            <div class="container">
+                <div class="textblock">
+                    <h2 class="h2grey">SCHEDULE OF EVENTS</h2>
+                    <div class="smline grey"></div>
+                </div>
+                <div class="textcontainer">
+                	<div class="textleft">
+                        <table>
+                             <tr>
+                                <td colspan="2"><h1>SATURDAY, OCTOBER 3</h1></td>
+                            </tr>
+                            <tr>
+                                <td class="left"><p>6:00 am</p></td>
+                                <td><p>Dawn Patrol Show</p></td>
+                            </tr>    
+                            <tr>    
+                                <td class="left"><p>6:30 am</p></td>
+                                <td><p>Krispy Kreme Morning Glow</p></td>
+                            </tr>
+                            <tr>
+                                <td class="left"><p>6:45 am</p></td>
+                                <td><p>Opening Ceremonies</p></td>
+                            </tr>
+                            <tr>
+                                <td class="left"><p>7:00 am</p></td>
+                                <td><p>Mass Ascension</p></td>
+                            </tr>
+                            <tr>
+                                <td class="left"><p>2:00 pm</p></td>
+                                <td><p>America’s Challenge Inflation</p></td>
+                            </tr>
+                            <tr>
+                                <td class="left"><p>6:00 pm</p></td>
+                                <td><p>Twilight Twinkle Glow™</p></td>
+                            </tr>
+                            <tr>
+                                <td class="left"><p>6:00 pm</p></td>
+                                <td><p>Challenge Race Launch</p></td>
+                            </tr>
+                            <tr>
+                                <td class="left"><p>8:00 pm*</p></td>
+                                <td><p>AfterGlow™ Fireworks Show</p></td>
+                            </tr>   
+                        </table>
+                            
+                        <table>
+                             <tr>
+                                <td colspan="2"><h1>SUNDAY, OCTOBER 4</h1></td>
+                            </tr>
+                            <tr>
+                                <td class="left"><p>6:00 am</p></td>
+                                <td><p>Dawn Patrol Show</p></td>
+                            </tr>    
+                            <tr>    
+                                <td class="left"><p>6:30 am</p></td>
+                                <td><p>Krispy Kreme Morning Glow</p></td>
+                            </tr>
+                            <tr>
+                                <td class="left"><p>7:00 am</p></td>
+                                <td><p>Mass Ascension</p></td>
+                            </tr>
+                            <tr>
+                                <td class="left"><p>9:00 am</p></td>
+                                <td><p>Fiesta of Wheels Car Show</p></td>
+                            </tr>
+                            <tr>
+                                <td class="left"><p>11:00 am</p></td>
+                                <td><p>Balloon Fiesta Pin Trading**</p></td>
+                            </tr>
+                            <tr>
+                                <td class="left"><p>6:00 pm</p></td>
+                                <td><p>Balloon Flow</p></td>
+                            </tr>
+                            <tr>
+                                <td class="left"><p>8:00 pm*</p></td>
+                                <td><p>AfterGlow™ Fireworks Show</p></td>
+                            </tr>   
+                        </table>
+                        
+                        <table>
+                             <tr>
+                                <td colspan="2"><h1>MONDAY, OCTOBER 5</h1></td>
+                            </tr>
+                            <tr>
+                                <td class="left"><p>6:00 am</p></td>
+                                <td><p>Dawn Patrol Show</p></td>
+                            </tr>
+                            <tr>
+                                <td class="left"><p>7:00 am</p></td>
+                                <td><p>Flying Competition</p></td>
+                            </tr>
+                        </table>
+                        
+                        <table>
+                             <tr>
+                                <td colspan="2"><h1>TUESDAY, OCTOBER 6 - PEPSI DAY</h1></td>
+                            </tr>
+                            <tr>
+                                <td class="left"><p>6:00 am</p></td>
+                                <td><p>Dawn Patrol Show</p></td>
+                            </tr>    
+                            <tr>    
+                                <td class="left"><p>7:00 am</p></td>
+                                <td><p>Flying Competition</p></td>
+                            </tr>
+                        </table>
+                        
+                        <table>
+                             <tr>
+                                <td colspan="2"><h1>WEDNESDAY, OCTOBER 7</h1></td>
+                            </tr>
+                            <tr>
+                                <td class="left"><p>6:00 am</p></td>
+                                <td><p>Dawn Patrol Show</p></td>
+                            </tr>    
+                            <tr>    
+                                <td class="left"><p>6:30 am</p></td>
+                                <td><p>Krispy Kreme Morning Glow</p></td>
+                            </tr>
+                            <tr>    
+                                <td class="left"><p>7:00 am</p></td>
+                                <td><p>Flight of Nations Mass Ascension</p></td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                	<div class="textleft">
+                        <table>
+                             <tr>
+                                <td colspan="2"><h1>THURSDAY, OCTOBER 8</h1></td>
+                            </tr>
+                            <tr>
+                                <td class="left"><p>6:00 am</p></td>
+                                <td><p>Dawn Patrol Show</p></td>
+                            </tr>    
+                            <tr>    
+                                <td class="left"><p>7:00 am</p></td>
+                                <td><p>Special Shape Rodeo™</p></td>
+                            </tr>
+                            <tr>    
+                                <td class="left"><p>8:00 am</p></td>
+                                <td><p>Flying Competition</p></td>
+                            </tr>
+                            <tr>    
+                                <td class="left"><p>6:00 pm</p></td>
+                                <td><p>Special Shape Glowdeo™</p></td>
+                            </tr>
+                            <tr>    
+                                <td class="left"><p>8:00 pm*</p></td>
+                                <td><p>AfterGlow™ Fireworks Show</p></td>
+                            </tr>
+                        </table>
+                        
+                        <table>
+                             <tr>
+                                <td colspan="2"><h1>FRIDAY, OCTOBER 9</h1></td>
+                            </tr>
+                            <tr>
+                                <td class="left"><p>6:00 am</p></td>
+                                <td><p>Dawn Patrol Show</p></td>
+                            </tr>    
+                            <tr>    
+                                <td class="left"><p>7:00 am</p></td>
+                                <td><p>Special Shape Rodeo™</p></td>
+                            </tr>
+                            <tr>    
+                                <td class="left"><p>8:00 am</p></td>
+                                <td><p>Flying Competition</p></td>
+                            </tr>
+                            <tr>    
+                                <td class="left"><p>6:00 pm</p></td>
+                                <td><p>Special Shape Glowdeo™</p></td>
+                            </tr>
+                            <tr>    
+                                <td class="left"><p>8:00 pm*</p></td>
+                                <td><p>AfterGlow™ Fireworks Show</p></td>
+                            </tr>
+                        </table>
+                        
+                        <table>
+                             <tr>
+                                <td colspan="2"><h1>SATURDAY, OCTOBER 10</h1></td>
+                            </tr>
+                            <tr>
+                                <td class="left"><p>6:00 am</p></td>
+                                <td><p>Dawn Patrol Show</p></td>
+                            </tr>
+                            <tr>
+                                <td class="left"><p>6:30 am</p></td>
+                                <td><p>Krispy Kreme Morning Glow</p></td>
+                            </tr> 
+                            <tr>    
+                                <td class="left"><p>7:00 am</p></td>
+                                <td><p>Mass Ascension</p></td>
+                            </tr>
+                            <tr>    
+                                <td class="left"><p>1:00 am</p></td>
+                                <td><p>Balloon Fiesta Pin Trading**</p></td>
+                            </tr>
+                            <tr>    
+                                <td class="left"><p>12:00 pm</p></td>
+                                <td><p>Music Fiesta™</p></td>
+                            </tr>
+                            <tr>    
+                                <td class="left"><p>6:00 pm</p></td>
+                                <td><p>Night Magic™ Glow</p></td>
+                            </tr>
+                            <tr>    
+                                <td class="left"><p>8:00 pm*</p></td>
+                                <td><p>AfterGlow™ Fireworks Show</p></td>
+                            </tr>
+                        </table>
+                        
+                        <table>
+                             <tr>
+                                <td colspan="2"><h1>SUNDAY, OCTOBER 11</h1></td>
+                            </tr>
+                            <tr>
+                                <td class="left"><p>6:00 am</p></td>
+                                <td><p>Dawn Patrol Show</p></td>
+                            </tr>
+                            <tr>
+                                <td class="left"><p>6:30 am</p></td>
+                                <td><p>Krispy Kreme Morning Glow</p></td>
+                            </tr> 
+                            <tr>    
+                                <td class="left"><p>7:00 am</p></td>
+                                <td><p>Farewell Mass Ascension</p></td>
+                            </tr>
+                        </table>
+                    </div>
+		                <p class="small">* AfterGlow™ times may change due to field/weather conditions</p>
+		                <p class="small">** North end of Launch Field™ for the pin trading</p>
+                </div>
+            </div>
+        </section>
+       
+        <section class="clearfix overlay">
+            <div class="container">
+                <div class="textblock">
+                    <img src="images/sponsors.svg"> 
+                </div>
+            </div>
+        </section>
+        
+        <a name="plan"></a>
+        <div class="line dblue"></div>
+        <section class="clearfix grey">
+            <div class="container">
+                <div class="textblock">
+                    <h2 class="h2dblue">PLAN YOUR VISIT</h2>
+                    <div class="smline dblue"></div>
+                </div>
+                <div class="textcontainer">
+                	<div class="textleft">
+                    	<h1 class="h1dblue sub">FIESTA EXPRESS PARK & RIDE</h1>
+							<p class="pdblue">The fastest way into the park! Leave from one of several convenient locations around the city and arrive inside Balloon Fiesta Park. Pricing, locations, schedules, and discounted tickets are available online.</p><br>
+                            <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script><div style="overflow:hidden;height:330px;width:320px;"><div id="gmap_canvas" style="height:330px;width:320px;"></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style><a class="google-map-code" href="http://wordpress-hosting.me" id="get-map-data">wordpress-hosting.me</a></div><script type="text/javascript"> function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(35.19888,-106.5863756),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(35.19888, -106.5863756)});infowindow = new google.maps.InfoWindow({content:"<b>Balloon Fiesta Park</b><br/>5000 Balloon Fiesta Pkwy NE<br/> Albuquerque" });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+                    </div>
+                    <div class="textleft">
+                        <h1 class="h1dblue sub">PARKING</h1>
+							<p class="pdblue">Parking is $10 per vehicle per session. Parking passes may be purchased in advance at the Balloon Fiesta Office.</p><br>
+						<h1 class="h1dblue sub">TRAVEL AND HOTEL RESERVATIONS</h1>
+                        	<p class="pdblue">www.balloonfiestahotels.com<br>
+                            505-346-0522</p><br>
+                        <h1 class="h1dblue sub">VISITOR INFORMATION</h1>
+                        	<p>Albuquerque Convention and Visitors Bureau
+                            Toll Free 800-284-2282<br>
+                            www.visitabq.com</p><br>
+                            <p>New Mexico Department of Tourism<br>
+							800-733-6396<br>
+                            www.newmexico.org</p>
+                    <div class="spacer-sm"></div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <a name="contact"></a>
+        <section class="clearfix overlay">
+            <div class="container">
+                <div class="blockcenter">
+                    <h3>CONTACT US</h3>
+                    <h4>QUESTIONS AND COMMENTS</h4>
+				</div>
+                    <div class="formblock" contenteditable>
+                    	<p class="pyellow">Name</p>
+                    </div>
+                    <div class="formblock" contenteditable>
+                    	<p class="pyellow">Email Address</p>
+                    </div>
+                    <div class="formblock message" contenteditable>
+                    	<p class="pyellow">Message</p>
+                    </div>
+                    <div class="buttoncontainer">
+                        <a class="abutton" href="#"><div class="button yellow"><h1 class="h1dblue">SEND<br> MESSAGE</h1></div></a>
+                    </div>
+            </div>
+        </section>
+        
+    </div>
+</body>  
+  
+<footer class="red">
+	good-bye
+</footer>
+   
+
+</html>
